@@ -45,7 +45,6 @@ class Scanner
 
     TRUTH_TABLE = { true => 'true'.colorize(:green), false => 'false'.colorize(:red) }
 
-
     def ssl_scan
       printf "\nScanning, results [+]%s [-%s] [!]%s\n\n" % ["strong".colorize(:green), "weak".colorize(:yellow), "vulnerable".colorize(:red)]
       if @host_file.to_s == ""
